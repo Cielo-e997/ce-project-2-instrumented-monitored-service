@@ -157,3 +157,20 @@ Dashboards offer a clear overview of system health.
 Alerts allow engineers to respond quickly to incidents.
 
 Together, these components create a monitoring strategy that helps engineers understand system behavior and operate services more confidently in production environments.
+
+## Slide 11 – Challenges
+
+During this project, one of the main challenges I faced was understanding how all the components connect together. Setting up monitoring and alerting was not just about creating resources, but about making sure they actually reflected the behavior of the application.
+
+Another challenge was debugging issues when something did not work as expected. For example, when alarms were not triggering or metrics were not appearing, I had to go step by step to identify what was missing or misconfigured.
+
+It also took some time to get comfortable with navigating CloudWatch and interpreting the data correctly, especially at the beginning.
+
+
+## Slide 12 – What I Would Improve
+
+If I had more time, I would focus on improving the testing of the system by simulating more realistic scenarios, such as higher traffic or different types of failures.
+
+I would also refine the dashboard to make it more visual and easier to interpret at a glance, adding more meaningful metrics and possibly organizing them differently.
+
+Finally, I would improve the alerting thresholds to make them more precise, so that alerts are triggered only when truly necessary and not too frequently.
