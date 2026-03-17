@@ -1,0 +1,80 @@
+{
+  "widgets": [
+    {
+      "type": "metric",
+      "x": 0,
+      "y": 0,
+      "width": 12,
+      "height": 6,
+      "properties": {
+        "metrics": [
+          [
+            "OrderService",
+            "APILatency"
+          ]
+        ],
+        "period": 60,
+        "stat": "Average",
+        "region": "eu-central-1",
+        "title": "API Latency"
+      }
+    },
+    {
+      "type": "metric",
+      "x": 12,
+      "y": 0,
+      "width": 12,
+      "height": 6,
+      "properties": {
+        "metrics": [
+          [
+            "OrderService",
+            "RequestCount"
+          ]
+        ],
+        "period": 60,
+        "stat": "Sum",
+        "region": "eu-central-1",
+        "title": "Request Count"
+      }
+    },
+    {
+      "type": "metric",
+      "x": 0,
+      "y": 6,
+      "width": 12,
+      "height": 6,
+      "properties": {
+        "metrics": [
+          [
+            "OrderService",
+            "ErrorCount"
+          ]
+        ],
+        "period": 60,
+        "stat": "Sum",
+        "region": "eu-central-1",
+        "title": "Error Count"
+      }
+    },
+    {
+      "type": "metric",
+      "x": 12,
+      "y": 6,
+      "width": 12,
+      "height": 6,
+      "properties": {
+        "metrics": [
+          [
+            "OrderService",
+            "OrdersCreated"
+          ]
+        ],
+        "period": 60,
+        "stat": "Sum",
+        "region": "eu-central-1",
+        "title": "Orders Created"
+      }
+    }
+  ]
+}

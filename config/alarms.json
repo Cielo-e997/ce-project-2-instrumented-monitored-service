@@ -1,0 +1,43 @@
+{
+  "alarms": [
+    {
+      "alarm_name": "HighLatency",
+      "description": "Triggers when average API latency exceeds 1000 milliseconds.",
+      "namespace": "OrderService",
+      "metric_name": "APILatency",
+      "statistic": "Average",
+      "period": 60,
+      "evaluation_periods": 1,
+      "threshold": 1000,
+      "comparison_operator": "GreaterThanOrEqualToThreshold",
+      "treat_missing_data": "notBreaching",
+      "alarm_action": "SNS notification"
+    },
+    {
+      "alarm_name": "HighErrorRate",
+      "description": "Triggers when error count is greater than or equal to 1.",
+      "namespace": "OrderService",
+      "metric_name": "ErrorCount",
+      "statistic": "Sum",
+      "period": 60,
+      "evaluation_periods": 1,
+      "threshold": 1,
+      "comparison_operator": "GreaterThanOrEqualToThreshold",
+      "treat_missing_data": "notBreaching",
+      "alarm_action": "SNS notification"
+    },
+    {
+      "alarm_name": "HighCPUUsage",
+      "description": "Triggers when CPU utilization exceeds 70 percent.",
+      "namespace": "AWS/EC2",
+      "metric_name": "CPUUtilization",
+      "statistic": "Average",
+      "period": 60,
+      "evaluation_periods": 1,
+      "threshold": 70,
+      "comparison_operator": "GreaterThanOrEqualToThreshold",
+      "treat_missing_data": "notBreaching",
+      "alarm_action": "SNS notification"
+    }
+  ]
+}
